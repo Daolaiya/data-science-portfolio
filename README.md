@@ -1,4 +1,4 @@
-# Projects
+# Portfolio Projects
 
 ### [Mountain Resort Pricing Strategy](https://github.com/Daolaiya/Data-Science-Portfolio/tree/main/Project%201)
 - Hypothesis → How can Big Mountain Resort create a ticket pricing strategy that will (1) better leverage the client’s facilities
