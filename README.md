@@ -6,7 +6,7 @@ and (2) either cut costs or give more confidence in increasing ticket prices wit
 
 <hr>
 
-### [Walmart Sales Prediction](https://github.com/Daolaiya/walmart-sales-pediction)
+### [Walmart Sales Prediction](https://github.com/Daolaiya/walmart-sales-prediction)
 - Hypothesis → How can Walmart use its reported sales data to (i) predict and take advantage of future
 sales/demand and (ii) potentially improve inventory allocation/scheduling?
 
