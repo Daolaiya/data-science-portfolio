@@ -1,0 +1,5 @@
+All you need is :
+
+---
+---
+@import "jekyll-theme-minimal";

@@ -1,0 +1,21 @@
+<div class="sidebar">
+  <h1 class="sidebar__title">
+    <a href="{{ '/' | absolute_url }}">
+      {{ site.title | default: site.github.repository_name }}
+    </a>
+  </h1>
+
+  {% if site.logo %}
+    <img class="sidebar__image" src="{{ site.logo | relative_url }}" alt="Logo">
+  {% endif %}
+
+  <p class="sidebar__links">
+    <a href="https://www.linkedin.com/in/damilola-olaiya">LinkedIn</a> |
+    <a href="https://github.com/Daolaiya/data-science-portfolio">GitHub</a>
+  </p>
+
+  <ul class="sidebar__description" style="text-align: left; padding-left: 20px;">
+    <li>Data Scientist with a background in Machine Learning, Data Visualization, Cloud Computing, Big Data and Neural Networks.</li>
+    <li>Experienced in delivering data-driven insights to technical and non-technical audiences alike.</li>
+  </ul>
+</div>

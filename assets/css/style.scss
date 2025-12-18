@@ -1,4 +1,57 @@
 ---
 ---
-
 @import "jekyll-theme-minimal";
+
+/* 1. Reset theme container limits */
+.wrapper {
+  max-width: none !important; /* Overrides Minimal theme width */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 2. Side-by-side Layout Container */
+.site-container {
+  display: flex !important;
+  flex-direction: row; /* Puts sidebar and content next to each other */
+  min-height: 100vh;
+}
+
+/* 3. Pinned Sidebar (The Card) */
+.layout__sidebar {
+  position: fixed !important; /* Pinned to the left */
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 320px !important;
+  background: #fdfdfd; /* Light card background */
+  border-right: 1px solid #eee;
+  padding: 40px 20px;
+  overflow-y: auto;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* 4. Expanded Content Area */
+.layout__content {
+  margin-left: 320px !important; /* Match sidebar width */
+  width: calc(100% - 320px) !important;
+  padding: 60px !important;
+  background: #fff;
+}
+
+/* Profile Image Styling */
+.sidebar__image {
+  border-radius: 50% !important;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  .site-container { flex-direction: column; }
+  .layout__sidebar { position: relative !important; width: 100% !important; height: auto; }
+  .layout__content { margin-left: 0 !important; width: 100% !important; padding: 20px !important; }
+}
