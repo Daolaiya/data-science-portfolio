@@ -11,7 +11,7 @@ layout: default
 - Conducted ablation studies confirming that frozen backbones improve overall performance, boosting sagittal-plane detection by ~16.1% (mAP@0.5:0.95) compared to the unfrozen model.
 
 <p align="center">
-  <img src="images/time_series.png" alt="Time_series" width="500">
+  <img src="images/brain_tumor.jpg" alt="Brain_tumor" width="500">
 </p>
 
 ### [Building Footprint Segmentation from Satellite Imagery](https://github.com/zewei-wang/Building-Footprint-RGB)
@@ -20,7 +20,7 @@ layout: default
 - Implemented geometric and photometric data augmentations (flips, rotations, gaussian  noise, blur) to combat domain shift, improving recall by ~6%, number of true positives (identified buildings) by ~5% and number of false negatives by 21%.
 
 <p align="center">
-  <img src="images/time_series.png" alt="Time_series" width="500">
+  <img src="images/building_footprint.jpg" alt="Building_footprint" width="500">
 </p>
 
 ### [Reconstruction of 12-Lead ECG from Reduced Leads Using U-Net](https://github.com/whiteblaze143/DATA_5000)
@@ -31,7 +31,7 @@ layout: default
 - Validated model performance on the PTB-XL dataset using rigorous patient-stratified cross-validation (18,885 patients), ensuring zero data leakage and reliable generalization to 1,900+ unseen patients in the test set.
 
 <p align="center">
-  <img src="images/time_series.png" alt="Time_series" width="500">
+  <img src="images/ECG.jpg" alt="ECG" width="500">
 </p>
 
 ### [Time Series Forecasting on Global Stock Prices](https://github.com/Daolaiya/vmzcTtY32ejVJbYS)
@@ -54,7 +54,7 @@ layout: default
 - Employed deep-learning image classification frameworks including ResNet and MobileNet.
 
 <p align="center">
-  <img src="images/time_series.png" alt="Time_series" width="500">
+  <img src="images/book_scan_2.png" alt="Book_scan" width="500">
 </p>
 
 ### [Ranking of Potential Candidates using Job Postings](https://github.com/Daolaiya/l4Xr09Wq1DFkXsRQ)
@@ -64,7 +64,7 @@ layout: default
 - Employed NLP techniques such as word embedding, sentence transformation, vectorization, variable encoding and cross validation.
 
 <p align="center">
-  <img src="images/time_series.png" alt="Time_series" width="500">
+  <img src="images/resumes_2.jpg" alt="Resumes" width="500">
 </p>
 
 ### [Predicting Likelihood of Investment using Demographic Data](https://github.com/Daolaiya/EQ33oG7lFS6Y2Uag)
@@ -74,7 +74,7 @@ layout: default
 - Resulting models also highlighted the demographic/customer segment to target for future investment with regards to age, profession, marital status, bank balance, mortgage status and debt status.
 
 <p align="center">
-  <img src="images/time_series.png" alt="Time_series" width="500">
+  <img src="images/demo.png" alt="Demo">
 </p>
 
 ### [Customer Satisfaction Prediction using Survey Data](https://github.com/Daolaiya/mountain-resort-pricing-strategy)
@@ -84,7 +84,7 @@ layout: default
 - Resulting models yielded accuracy up to ~80% when tested and identified the key components of the business operations which were responsible for maximizing customer satisfaction and minimizing customer turnover/churn.
 
 <p align="center">
-  <img src="images/time_series.png" alt="Time_series" width="500">
+  <img src="images/churn_2.png" alt="Churn">
 </p>
 
 ### [Ticket Price Analysis for Ski Resorts](https://github.com/Daolaiya/mountain-resort-pricing-strategy)
@@ -94,5 +94,5 @@ layout: default
 - Resulting models yielded insights into how the client could raise its profit margin by up to 21% through eliminating redundant costs, changing ticket pricing strategy and adding new cost-effective facilities to its resort.
 
 <p align="center">
-  <img src="images/time_series.png" alt="Time_series" width="500">
+  <img src="images/resort.jpg" alt="Resort" width="500" height="300">
 </p>
