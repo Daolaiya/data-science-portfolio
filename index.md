@@ -2,6 +2,38 @@
 layout: default
 ---
 # Portfolio Projects
+### [Brain Tumor Detection Using Multiplanar MRI Fusion and YOLO-Based Model](https://github.com/3seoksw/Brain-Tumor-PK-YOLO)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/3seoksw/Brain-Tumor-PK-YOLO)
+- Designed a novel Mixture YOLO model to address cross-plane performance gaps in MRI tumor detection by integrating three SparK-RepViT backbones pretrained on axial, coronal and sagittal brain image slices.
+- Implemented an adaptive router module to dynamically weight and fuse features from each plane-specific backbone, enabling the model to emphasize the most informative plane for each detection.
+- Optimized model efficiency by freezing the three pretrained backbones, reducing trainable parameters from 217.6M to 55.5M while preserving specialized plane-wise representations.
+- Achieved state-of-the-art results on axial MRI scans – 91.3% recall and 95.0% mAP@0.5 – surpassing the original baseline model on these metrics.
+- Conducted ablation studies confirming that frozen backbones improve overall performance, boosting sagittal-plane detection by ~16.1% (mAP@0.5:0.95) compared to the unfrozen model.
+
+<p align="center">
+  <img src="images/time_series.png" alt="Time_series" width="500">
+</p>
+
+### [Building Footprint Segmentation from Satellite Imagery](https://github.com/zewei-wang/Building-Footprint-RGB)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/zewei-wang/Building-Footprint-RGB)
+- Engineered a UNet semantic segmentation pipeline (using PyTorch, Solaris) to extract building footprints from satellite imagery for urban planning and disaster response simulations across diverse terrains/landscapes/regions.
+- Implemented geometric and photometric data augmentations (flips, rotations, gaussian  noise, blur) to combat domain shift, improving recall by ~6%, number of true positives (identified buildings) by ~5% and number of false negatives by 21%.
+
+<p align="center">
+  <img src="images/time_series.png" alt="Time_series" width="500">
+</p>
+
+### [Reconstruction of 12-Lead ECG from Reduced Leads Using U-Net](https://github.com/whiteblaze143/DATA_5000)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/whiteblaze143/DATA_5000)
+- Achieved 0.846 mean correlation in reconstructing full 12-lead ECGs from reduced 3-lead inputs by developing a hybrid architecture that couples a 1D U-Net with deterministic physiological constraints (Einthoven’s Law).
+- Reduced model complexity by ~58% (40.8M to 17.1M parameters) while improving accuracy, proving via ablation studies that a shared-decoder architecture provides superior regularization compared to lead-specific heads.
+- Engineered a zero-parameter physics module to exactly compute 4 limb leads (III, aVR, aVL, aVF), effectively reducing the deep learning regression problem space by 44% and guaranteeing clinical validity for derived leads.
+- Validated model performance on the PTB-XL dataset using rigorous patient-stratified cross-validation (18,885 patients), ensuring zero data leakage and reliable generalization to 1,900+ unseen patients in the test set.
+
+<p align="center">
+  <img src="images/time_series.png" alt="Time_series" width="500">
+</p>
+
 ### [Time Series Forecasting on Global Stock Prices](https://github.com/Daolaiya/vmzcTtY32ejVJbYS)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/Daolaiya/vmzcTtY32ejVJbYS)
 - Sourced stock price data from various global financial institutions over a 2 year period.
@@ -10,6 +42,10 @@ layout: default
 - Resulting models yielded profits up to 20% of initial investment and registered no losses when used on test data.
 - Employed time-series processing techniques including ARIMA modelling, simple exponential smoothing, LSTMs, facebook prophet and rolling forecasts among others.
 
+<p align="center">
+  <img src="images/time_series.png" alt="Time_series" width="500">
+</p>
+
 ### [Image Recognition for Document Digitization](https://github.com/Daolaiya/iTgTyUmUQ7igs7pM)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/Daolaiya/vmzcTtY32ejVJbYS)
 - Developed image prediction models to be used in tandem with software for manual, page-by-page digitization or scanning.
@@ -17,11 +53,19 @@ layout: default
 - Resulting models showed more than 90% accuracy with test data.
 - Employed deep-learning image classification frameworks including ResNet and MobileNet.
 
+<p align="center">
+  <img src="images/time_series.png" alt="Time_series" width="500">
+</p>
+
 ### [Ranking of Potential Candidates using Job Postings](https://github.com/Daolaiya/l4Xr09Wq1DFkXsRQ)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/Daolaiya/vmzcTtY32ejVJbYS)
 - Designed NLP models that take a hiring company's job posting, analyze the job titles and job descriptions of potential candidates, then rank all candidates based on their similarity to the given job description.
 - Created a web interface that allows the user/operator to select their preferred candidates then updates the model’s ranking of all viable candidates in real time based on the new information.
 - Employed NLP techniques such as word embedding, sentence transformation, vectorization, variable encoding and cross validation.
+
+<p align="center">
+  <img src="images/time_series.png" alt="Time_series" width="500">
+</p>
 
 ### [Predicting Likelihood of Investment using Demographic Data](https://github.com/Daolaiya/EQ33oG7lFS6Y2Uag)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/Daolaiya/vmzcTtY32ejVJbYS)
@@ -29,14 +73,26 @@ layout: default
 - Resulting models yielded up to 88% accuracy in predicting likelihood of investment.
 - Resulting models also highlighted the demographic/customer segment to target for future investment with regards to age, profession, marital status, bank balance, mortgage status and debt status.
 
+<p align="center">
+  <img src="images/time_series.png" alt="Time_series" width="500">
+</p>
+
 ### [Customer Satisfaction Prediction using Survey Data](https://github.com/Daolaiya/mountain-resort-pricing-strategy)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/Daolaiya/vmzcTtY32ejVJbYS)
 - Sourced data from the customer surveys of a Logistics and Delivery business including timeliness of delivery, pricing, courier performance, ease of app use, missing contents and overall satisfaction among others.
 - Designed prediction models that evaluated and predicted customer satisfaction (satisfied or unsatisfied) using the survey data.
 - Resulting models yielded accuracy up to ~80% when tested and identified the key components of the business operations which were responsible for maximizing customer satisfaction and minimizing customer turnover/churn.
 
+<p align="center">
+  <img src="images/time_series.png" alt="Time_series" width="500">
+</p>
+
 ### [Ticket Price Analysis for Ski Resorts](https://github.com/Daolaiya/mountain-resort-pricing-strategy)
 [![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/Daolaiya/vmzcTtY32ejVJbYS)
 - Sourced data from 330 ski resorts in the United States including ticket prices, skiable area, annual days of operation, location, mountain elevations, number of chairlifts/trams and  snowfall among others.
 - Designed prediction models that assessed the relationship between ticket prices (weekend, weekday, adult, child) and the different features, attractions and facilities available at the resorts.
 - Resulting models yielded insights into how the client could raise its profit margin by up to 21% through eliminating redundant costs, changing ticket pricing strategy and adding new cost-effective facilities to its resort.
+
+<p align="center">
+  <img src="images/time_series.png" alt="Time_series" width="500">
+</p>
