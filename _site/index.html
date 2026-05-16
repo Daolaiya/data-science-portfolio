@@ -54,6 +54,44 @@
       <main class="layout__content">
         <div class="content-body">
           <h1 id="portfolio-projects">Portfolio Projects</h1>
+<h3 id="brain-tumor-detection-using-multiplanar-mri-fusion-and-yolo-based-model"><a href="https://github.com/3seoksw/Brain-Tumor-PK-YOLO">Brain Tumor Detection Using Multiplanar MRI Fusion and YOLO-Based Model</a></h3>
+<p><a href="https://github.com/3seoksw/Brain-Tumor-PK-YOLO"><img src="https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub" alt="View on GitHub" /></a></p>
+<ul>
+  <li>Designed a novel Mixture YOLO model to address cross-plane performance gaps in MRI tumor detection by integrating three SparK-RepViT backbones pretrained on axial, coronal and sagittal brain image slices.</li>
+  <li>Implemented an adaptive router module to dynamically weight and fuse features from each plane-specific backbone, enabling the model to emphasize the most informative plane for each detection.</li>
+  <li>Optimized model efficiency by freezing the three pretrained backbones, reducing trainable parameters from 217.6M to 55.5M while preserving specialized plane-wise representations.</li>
+  <li>Achieved state-of-the-art results on axial MRI scans – 91.3% recall and 95.0% mAP@0.5 – surpassing the original baseline model on these metrics.</li>
+  <li>Conducted ablation studies confirming that frozen backbones improve overall performance, boosting sagittal-plane detection by ~16.1% (mAP@0.5:0.95) compared to the unfrozen model.</li>
+</ul>
+
+<p align="center">
+  <img src="images/brain_tumor.jpg" alt="Brain_tumor" width="500" />
+</p>
+
+<h3 id="building-footprint-segmentation-from-satellite-imagery"><a href="https://github.com/zewei-wang/Building-Footprint-RGB">Building Footprint Segmentation from Satellite Imagery</a></h3>
+<p><a href="https://github.com/zewei-wang/Building-Footprint-RGB"><img src="https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub" alt="View on GitHub" /></a></p>
+<ul>
+  <li>Engineered a UNet semantic segmentation pipeline (using PyTorch, Solaris) to extract building footprints from satellite imagery for urban planning and disaster response simulations across diverse terrains/landscapes/regions.</li>
+  <li>Implemented geometric and photometric data augmentations (flips, rotations, gaussian  noise, blur) to combat domain shift, improving recall by ~6%, number of true positives (identified buildings) by ~5% and number of false negatives by 21%.</li>
+</ul>
+
+<p align="center">
+  <img src="images/building_footprint.jpg" alt="Building_footprint" width="500" />
+</p>
+
+<h3 id="reconstruction-of-12-lead-ecg-from-reduced-leads-using-u-net"><a href="https://github.com/whiteblaze143/DATA_5000">Reconstruction of 12-Lead ECG from Reduced Leads Using U-Net</a></h3>
+<p><a href="https://github.com/whiteblaze143/DATA_5000"><img src="https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub" alt="View on GitHub" /></a></p>
+<ul>
+  <li>Achieved 0.846 mean correlation in reconstructing full 12-lead ECGs from reduced 3-lead inputs by developing a hybrid architecture that couples a 1D U-Net with deterministic physiological constraints (Einthoven’s Law).</li>
+  <li>Reduced model complexity by ~58% (40.8M to 17.1M parameters) while improving accuracy, proving via ablation studies that a shared-decoder architecture provides superior regularization compared to lead-specific heads.</li>
+  <li>Engineered a zero-parameter physics module to exactly compute 4 limb leads (III, aVR, aVL, aVF), effectively reducing the deep learning regression problem space by 44% and guaranteeing clinical validity for derived leads.</li>
+  <li>Validated model performance on the PTB-XL dataset using rigorous patient-stratified cross-validation (18,885 patients), ensuring zero data leakage and reliable generalization to 1,900+ unseen patients in the test set.</li>
+</ul>
+
+<p align="center">
+  <img src="images/ECG.jpg" alt="ECG" width="500" />
+</p>
+
 <h3 id="time-series-forecasting-on-global-stock-prices"><a href="https://github.com/Daolaiya/vmzcTtY32ejVJbYS">Time Series Forecasting on Global Stock Prices</a></h3>
 <p><a href="https://github.com/Daolaiya/vmzcTtY32ejVJbYS"><img src="https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub" alt="View on GitHub" /></a></p>
 <ul>
@@ -64,6 +102,10 @@
   <li>Employed time-series processing techniques including ARIMA modelling, simple exponential smoothing, LSTMs, facebook prophet and rolling forecasts among others.</li>
 </ul>
 
+<p align="center">
+  <img src="images/time_series.png" alt="Time_series" width="500" />
+</p>
+
 <h3 id="image-recognition-for-document-digitization"><a href="https://github.com/Daolaiya/iTgTyUmUQ7igs7pM">Image Recognition for Document Digitization</a></h3>
 <p><a href="https://github.com/Daolaiya/vmzcTtY32ejVJbYS"><img src="https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub" alt="View on GitHub" /></a></p>
 <ul>
@@ -73,6 +115,10 @@
   <li>Employed deep-learning image classification frameworks including ResNet and MobileNet.</li>
 </ul>
 
+<p align="center">
+  <img src="images/book_scan_2.png" alt="Book_scan" width="500" />
+</p>
+
 <h3 id="ranking-of-potential-candidates-using-job-postings"><a href="https://github.com/Daolaiya/l4Xr09Wq1DFkXsRQ">Ranking of Potential Candidates using Job Postings</a></h3>
 <p><a href="https://github.com/Daolaiya/vmzcTtY32ejVJbYS"><img src="https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub" alt="View on GitHub" /></a></p>
 <ul>
@@ -80,6 +126,10 @@
   <li>Created a web interface that allows the user/operator to select their preferred candidates then updates the model’s ranking of all viable candidates in real time based on the new information.</li>
   <li>Employed NLP techniques such as word embedding, sentence transformation, vectorization, variable encoding and cross validation.</li>
 </ul>
+
+<p align="center">
+  <img src="images/resumes_2.jpg" alt="Resumes" width="500" />
+</p>
 
 <h3 id="predicting-likelihood-of-investment-using-demographic-data"><a href="https://github.com/Daolaiya/EQ33oG7lFS6Y2Uag">Predicting Likelihood of Investment using Demographic Data</a></h3>
 <p><a href="https://github.com/Daolaiya/vmzcTtY32ejVJbYS"><img src="https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub" alt="View on GitHub" /></a></p>
@@ -89,6 +139,10 @@
   <li>Resulting models also highlighted the demographic/customer segment to target for future investment with regards to age, profession, marital status, bank balance, mortgage status and debt status.</li>
 </ul>
 
+<p align="center">
+  <img src="images/demo.png" alt="Demo" />
+</p>
+
 <h3 id="customer-satisfaction-prediction-using-survey-data"><a href="https://github.com/Daolaiya/mountain-resort-pricing-strategy">Customer Satisfaction Prediction using Survey Data</a></h3>
 <p><a href="https://github.com/Daolaiya/vmzcTtY32ejVJbYS"><img src="https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub" alt="View on GitHub" /></a></p>
 <ul>
@@ -97,6 +151,10 @@
   <li>Resulting models yielded accuracy up to ~80% when tested and identified the key components of the business operations which were responsible for maximizing customer satisfaction and minimizing customer turnover/churn.</li>
 </ul>
 
+<p align="center">
+  <img src="images/churn_2.png" alt="Churn" />
+</p>
+
 <h3 id="ticket-price-analysis-for-ski-resorts"><a href="https://github.com/Daolaiya/mountain-resort-pricing-strategy">Ticket Price Analysis for Ski Resorts</a></h3>
 <p><a href="https://github.com/Daolaiya/vmzcTtY32ejVJbYS"><img src="https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub" alt="View on GitHub" /></a></p>
 <ul>
@@ -104,6 +162,10 @@
   <li>Designed prediction models that assessed the relationship between ticket prices (weekend, weekday, adult, child) and the different features, attractions and facilities available at the resorts.</li>
   <li>Resulting models yielded insights into how the client could raise its profit margin by up to 21% through eliminating redundant costs, changing ticket pricing strategy and adding new cost-effective facilities to its resort.</li>
 </ul>
+
+<p align="center">
+  <img src="images/resort.jpg" alt="Resort" width="500" height="300" />
+</p>
 
         </div>
       </main>
